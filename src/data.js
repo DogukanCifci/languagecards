@@ -1,13 +1,13 @@
-import css from "../assets/css.png";
-import python from "../assets/python.png";
-import java from "../assets/java.png";
-import cpp from "../assets/cpp.png";
-import typeScript from "../assets/ts.png";
-import php from "../assets/php.png";
-import javaScript from "../assets/javascript.png";
-import html from "../assets/html.png";
+import css from "./assets/css.png";
+import python from "./assets/python.png";
+import java from "./assets/java.png";
+import cpp from "./assets/cpp.png";
+import typeScript from "./assets/ts.png";
+import php from "./assets/php.png";
+import javaScript from "./assets/javascript.png";
+import html from "./assets/html.png";
 
-export const languages = [
+const languages = [
   {
     name: "html",
     img: html,
@@ -49,3 +49,4 @@ export const languages = [
     options: ["BackEnd", "1995", "	Rasmus Lerdorf"],
   },
 ];
+export default languages;
