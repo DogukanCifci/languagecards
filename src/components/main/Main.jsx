@@ -1,31 +1,32 @@
 import { useState } from "react";
-import "./Main.css";
-const Main = ({ data }) => {
+
+const Main = ({ element }) => {
   const [check, setCheck] = useState(true);
-  console.log(check);
+  //console.log(check);
+
+  console.log(element);
   return (
-    <div className="main-container">
-      <h1>Languages</h1>
-      <div className="row">
-        <div className="col" onClick={() => setCheck(!check)}>
-          {data.map((e, index) => {
-            return check ? (
-              <div className="cards" key={index}>
-                <img src={e.img} alt="" />
-                <div className="cards-title">{e.name.toUpperCase()}</div>
-              </div>
-            ) : (
-              <div className="cards" key={index}>
-                <ul>
-                  <li>{e.options[0]}</li>
-                  <li>{e.options[1]}</li>
-                  <li>{e.options[2]}</li>
-                </ul>
-              </div>
-            );
-          })}
+    <div className="col" onClick={() => setCheck(!check)}>
+      {check ? (
+        <div className="cards">
+          <img src={element.img} alt="" />
+          <div className="cards-title">{element.name.toUpperCase()}</div>
         </div>
-      </div>
+      ) : (
+        <div className="col">
+          <div className="cards">
+            <ul>
+              {element.options.map((a) => {
+                return (
+                  <li>
+                    <span>🔹</span> {a}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

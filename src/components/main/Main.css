@@ -1,22 +1,24 @@
 .main-container {
-  background-color: rgb(69, 71, 10);
+  background-color: #ffae00;
   margin-top: 30px;
   padding: 30px;
   border-radius: 15px;
 }
-.main-container .row .col {
+.main-container .row {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 220px);
   grid-template-rows: repeat(5);
   gap: 10px;
 }
 
 .main-container h1 {
   margin-bottom: 30px;
+  color: red;
 }
 .main-container .cards {
   width: 98%;
-  background-color: antiquewhite;
+  height: 160px;
+  background-color: white;
   border-radius: 30px;
 }
 
@@ -39,3 +41,13 @@
 .main-container .cards:hover {
   cursor: pointer;
 }
+
+li {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+  transition: all 1s;
+}
+
+/* Color Theme Swatches in Hex */
