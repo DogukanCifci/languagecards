@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 .main-container {
   background-color: #ffae00;
   margin-top: 30px;
@@ -14,6 +16,9 @@
 .main-container h1 {
   margin-bottom: 30px;
   color: red;
+  font-family: "Indie Flower", cursive;
+  font-weight: 800;
+  font-size: 3rem;
 }
 .main-container .cards {
   width: 98%;
