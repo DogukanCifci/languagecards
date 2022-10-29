@@ -16,9 +16,9 @@ const Main = ({ element }) => {
         <div className="col">
           <div className="cards">
             <ul>
-              {element.options.map((a) => {
+              {element.options.map((a, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <span>🔹</span> {a}
                   </li>
                 );

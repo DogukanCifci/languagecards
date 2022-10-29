@@ -1,10 +1,12 @@
 import Header from "./components/header/Header";
-import "./App.css";
+import Item from "./components/item/Item";
 
 import dataa from "./data";
-import Item from "./components/item/Item";
+import "./App.css";
+
 function App() {
   console.log(dataa);
+
   return (
     <div>
       <Header />
